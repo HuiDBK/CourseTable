@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CourseTable</string>
+    <string name="am">上\n午</string>
+    <string name="pm">下\n午</string>
+    <string name="night">晚\n上</string>
+    <string name="one">1\n2</string>
+    <string name="three">3\n4</string>
+    <string name="five">5\n6</string>
+    <string name="seven">7\n8</string>
+    <string name="support">辅\n导</string>
+    <string name="test_course">course_name\ncourse_teach\ncourse_address</string>
+</resources>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/pkq" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/pkq" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/selector_color_textview" />
+        <!--星期-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_textview" />
+
+            <TextView
+                android:id="@+id/mon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:text="一" />
+
+            <TextView
+                android:id="@+id/tue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:text="二" />
+
+            <TextView
+                android:id="@+id/wed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:text="三" />
+
+            <TextView
+                android:id="@+id/thu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:text="四" />
+
+            <TextView
+                android:id="@+id/fri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:text="五" />
+        </LinearLayout>
+
+        <!--早晨-->
+        <TextView
+            android:id="@+id/morning"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="清        新        早        晨"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.example.mrliu.coursetable.customview.MyTextView
+            android:id="@+id/custom_morning"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="起             床             啦"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <!--上午课程-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_am"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:lineHeight="40dp"
+                android:text="@string/am"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--上午课程-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical">
+
+                <!--1、2节课-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_course1"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course2"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course3"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_course4"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course5"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rest_am"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_color_textview"
+                    android:gravity="center"
+                    android:text="课             间             放             松" />
+                <!--3、4节课-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_course6"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course7"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course8"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course9"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_course10"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--午休时间-->
+        <TextView
+            android:id="@+id/rest_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="午                休                时                间"
+            android:textStyle="bold" />
+
+        <!--下午课程-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:lineHeight="40dp"
+                android:text="@string/pm"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--下午课程-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="vertical">
+
+                <!--1、2节课-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_course11"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course12"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course13"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_course14"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course15"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rest_pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_color_textview"
+                    android:gravity="center"
+                    android:text="课             间             放             松" />
+
+                <!--3、4节课-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_course16"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course17"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course18"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_course19"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:background="@drawable/selector_color_textview">
+
+                        <TextView
+                            android:id="@+id/tv_course20"
+                            style="@style/MyTextView"
+                            android:lineHeight="15dp" />
+
+                        <ImageView
+                            android:id="@+id/rabbit7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--晚餐时间-->
+        <TextView
+            android:id="@+id/tv_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="晚              餐             eat             啥"
+            android:textStyle="bold" />
+
+        <!--晚上课程-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_color_textview"
+                android:gravity="center"
+                android:lineHeight="30dp"
+                android:text="@string/night"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_course21"
+                    style="@style/MyTextView"
+                    android:lineHeight="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_course22"
+                    style="@style/MyTextView"
+                    android:lineHeight="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_course23"
+                    style="@style/MyTextView"
+                    android:lineHeight="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_course24"
+                    style="@style/MyTextView"
+                    android:lineHeight="15dp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/selector_color_textview">
+
+                    <TextView
+                        android:id="@+id/tv_course25"
+                        style="@style/MyTextView"
+                        android:lineHeight="15dp" />
+
+                    <ImageView
+                        android:id="@+id/rabbit8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--休息时间-->
+        <TextView
+            android:id="@+id/tv_night_rest"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="没            课            啦"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--周末时间-->
+        <com.example.mrliu.coursetable.customview.MyTextView
+            android:id="@+id/tv_weekend"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_color_textview"
+            android:gravity="center"
+            android:text="放            假            啦"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/selector_color_textview" />
+
+    </LinearLayout>
+
+</ScrollView>
